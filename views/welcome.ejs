@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <title>Document</title>
+
+    <%- include('./partials/head') %>
+   <style>
+     
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+  position: fixed;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.regular.grey{
+  background-color: #6c6c6c; 
+  top: 10%;
+}
+   </style>
+    <body data-spy="scroll" data-target=".fixed-top">
+        <!-- Navigation -->
+        <%- include('./partials/navbar', {currentPage: 'home'}) %>
+        <!-- end of navigation -->
+         <h1> Hello! (userName)</h1>
+         <p1>you still havent chosen a profile picture</p1>
+         <img src="https://i.postimg.cc/s21CdrnY/blank-profile-picture-973460-960-720.webp" alt="background">
+          <button type="button" class="regular button grey" onclick="nextPage()"> lets start training!</button>
+
+
+          <div class="cantainer">
+            <ul> 
+        <li style="float:right"><a href="#" class="nav__link nav__link">
+          <i class="material-icons" style="font-size:35px;">account_circle</i>
+        </a></li>
+        <li><a href="#" class="nav__link">
+          <img src="https://i.postimg.cc/FK3CTCDm/Rishon-Fit-1.png" alt="logo" width="35" height="35">
+        </a></li>
+        <li><a href="#" class="nav__link">
+          <i class="material-icons" style="font-size:35px;">search</i>
+        </a></li>
+      </ul>
+          </div>
+         <script>
+           function nextPage(){
+            location.href="views\index.ejs";}
+         </script>
+</body>
+</html>
