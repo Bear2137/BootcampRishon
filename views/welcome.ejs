@@ -89,18 +89,18 @@ li a {
            function nextPage(){
             location.href="views\index.ejs";}
 
-          function displayName(user){
+          function displayName(){
             //this function displays hi(username) after the log in was succssessfull in the welcome page.
             const username = localStorage.getItem('username');
            // Check if the username exists
-            document.getElementById('userDisplay').innerText = username;}
+            document.getElementById('userDisplay').innerText = ("hello "+username);}
 
           function getUserName(){
             //supposed to be in the login/sign up/register page to send the username here so the welcome page will display it.
            const  user=document.getElementsByClassName("UserName")
             localStorage.setItem('username', user);
             //trigger the function once the log in is sucssessfull.
-
+            displayName()
           }
          </script>
 </body>
