@@ -5,118 +5,105 @@
 
     <%- include('./partials/head') %>
    <style>
-            .cantainer {
-             position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #343a40; 
-            padding: 15px 0; 
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);}
-
             body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f8f9fa;
-            font-family: Arial, sans-serif;
-            flex-direction: column;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
 
-        h1, p {
-            text-align: center;
-        }
+h1, p {
+    text-align: center;
+}
 
-        h1 {
-            font-size: 2.5em;
-            color: #343a40;
-        }
+h1 {
+    font-size: 2.5em;
+    color: #343a40;
+}
 
-        p {
-            font-size: 1.2em;
-            color: #6c757d;
-        }
+p {
+    font-size: 1.2em;
+    color: #6c757d;
+}
 
-    
-        img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            display: block;
-            margin: 20px auto;
-            border: 2px solid #6c757d;
-        }
+/* Profile Image Styling */
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #6c757d;
+}
 
-        
-        .button {
-            background-color: #343a40;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1.1em;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-            transition: background-color 0.3s ease;
-        }
+/* Button Styling */
+.button {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
 
-        .button:hover {
-            background-color: #495057;
-        }
+.button:hover {
+    background-color: #495057;
+}
+.cantainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; 
+    padding: 10px 0; /* Reduced padding for a thinner look */
+    display: flex;
+    justify-content: space-between; /* Adjusted for better spacing */
+    align-items: center;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle top border */
+}
 
-        
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #343a40;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for layout */
+    width: 100%; /* Ensure full width */
+    justify-content: space-around; /* Evenly distribute items */
+}
 
-        li {
-            float: left;
-        }
+li {
+    margin: 0 15px; /* Adjusted margin for spacing */
+}
 
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 18px;
-        }
+li a {
+    display: flex; /* Use flex for centering icons and text */
+    flex-direction: column; /* Align icon and text vertically */
+    align-items: center; /* Center items */
+    color: white;
+    text-decoration: none;
+    font-size: 14px; /* Smaller font size for a cleaner look */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
 
-        li a:hover {
-            background-color: #495057;
-        }
+li a:hover {
+    color: #495057; /* Change text color on hover */
+}
 
-    
-        .material-icons {
-            font-size: 30px;
-        }
+.material-icons {
+    font-size: 24px; /* Icon size */
+}
 
-    
-        @media(max-width: 600px) {
-            h1 {
-                font-size: 2em;
-            }
-
-            p {
-                font-size: 1em;
-            }
-
-            img {
-                width: 120px;
-                height: 120px;
-            }
-        }
+img {
+    width: 25px; /* Adjusted logo size */
+    height: auto; /* Maintain aspect ratio */
+}
    </style>
     <body data-spy="scroll" data-target=".fixed-top">
         <!-- Navigation -->
