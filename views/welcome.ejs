@@ -66,7 +66,7 @@ li a {
         <!-- Navigation -->
         <%- include('./partials/navbar', {currentPage: 'home'}) %>
         <!-- end of navigation -->
-         <h1> Hello! (userName)</h1>
+         <h1 id="userDisplay"> Hello! </h1>
          <p1>you still havent chosen a profile picture</p1>
          <img src="https://i.postimg.cc/s21CdrnY/blank-profile-picture-973460-960-720.webp" alt="background">
           <button type="button" class="regular button grey" onclick="nextPage()"> lets start training!</button>
@@ -88,6 +88,20 @@ li a {
          <script>
            function nextPage(){
             location.href="views\index.ejs";}
+
+          function displayName(user){
+            //this function displays hi(username) after the log in was succssessfull in the welcome page.
+            const username = localStorage.getItem('username');
+           // Check if the username exists
+            document.getElementById('userDisplay').innerText = username;}
+
+          function getUserName(){
+            //supposed to be in the login/sign up/register page to send the username here so the welcome page will display it.
+           const  user=document.getElementsByClassName("UserName")
+            localStorage.setItem('username', user);
+            //trigger the function once the log in is sucssessfull.
+
+          }
          </script>
 </body>
 </html>
