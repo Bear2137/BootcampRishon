@@ -4,6 +4,7 @@
     <title>Document</title>
    <style>
       /* Navigation Bar */
+/* Navigation Bar *//* Navigation Bar */
 /* Navigation Bar */
 .navbar {
     position: fixed; 
@@ -19,6 +20,8 @@
 
 /* Ensure the rest of the page starts below the navbar */
 body {
+
+    
     /* padding-top: 70px; This adds space below the navbar for content */
     background-color: #f0f2f5;
     font-family: 'Roboto', sans-serif;
@@ -28,7 +31,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
 }
 html {
     height: 100%; /* Ensure the root element takes full height for scrolling */
@@ -135,11 +138,13 @@ li a:hover {
     margin-bottom: 5px;
 }
 
-
+/* Logo Styling */
 img {
     width: 40px;
     height: auto;
 }
+
+
 
 
 
@@ -173,7 +178,7 @@ img {
         </div>
          <script>
            function nextPage(){
-            location.href="views\chooseRoute.ejs";}
+            location.href="/chooseRoute";}
 
           function displayName(){
             //this function displays hi(username) after the log in was succssessfull in the welcome page.
