@@ -5,7 +5,7 @@
 
     <%- include('./partials/head') %>
    <style>
-            body {
+       body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,8 +33,8 @@ p {
 /* Profile Image Styling */
 img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     display: block;
     margin: 20px auto;
     border: 2px solid #6c757d;
@@ -42,7 +42,7 @@ img {
 
 /* Button Styling */
 .button {
-    background-color: #343a40;
+    background-color:#FFA500;
     color: white;
     padding: 10px 20px;
     font-size: 1.1em;
@@ -54,13 +54,13 @@ img {
 }
 
 .button:hover {
-    background-color: #495057;
+    background-color:#f6b743;
 }
 .cantainer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #343a40; 
+    background-color: rgb(0, 123, 255); 
     padding: 10px 0; /* Reduced padding for a thinner look */
     display: flex;
     justify-content: space-between; /* Adjusted for better spacing */
@@ -101,9 +101,26 @@ li a:hover {
 }
 
 img {
-    width: 25px; /* Adjusted logo size */
+    width:55px; /* Adjusted logo size */
     height: auto; /* Maintain aspect ratio */
 }
+.cardplace {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 2px #FFA500;
+    padding: 20px;
+    margin:30px;
+    border-radius: 50px;
+    width: 90%;
+    max-width: 500px;
+    /* height: auto; */
+    text-align: center;
+    align-items: center;
+}
+
+
    </style>
     <body data-spy="scroll" data-target=".fixed-top">
         <!-- Navigation -->
